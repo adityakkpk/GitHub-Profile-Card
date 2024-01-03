@@ -8,8 +8,6 @@ btn.addEventListener("click", (e) => {
   e.preventDefault();
   let input = document.getElementById("username").value;
   let prof = document.getElementById("proff").value;
-
-  userIn.classList.add('hide');
   
   if (input === ''){
     p.innerHTML = 'Invalid username';
@@ -18,6 +16,7 @@ btn.addEventListener("click", (e) => {
     }, 1000);
     return;
   }
+  userIn.classList.add('hide');
   card.classList.remove('hide');
   
   const reqURL = `https://api.github.com/users/${input}`;
@@ -41,10 +40,10 @@ btn.addEventListener("click", (e) => {
         <a href="#">
           <img src="Images/instagram.svg" alt="">
         </a>
-        <a href="www.x.com/${objData.twitter_username}">
+        <a href="https:/x.com/${objData.twitter_username}">
           <img src="Images/tweeter.svg" alt="">
         </a>
-        <a href="www.github.com/${input}">
+        <a href="https:/github.com/${input}">
           <img src="Images/github.svg" alt="">
         </a>
       </div>

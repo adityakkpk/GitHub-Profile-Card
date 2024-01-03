@@ -60,15 +60,15 @@ button:active{
   color: white;
 }
 
-.hide {
-  display: none;
-}
-
 .userInput {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+
+.hide {
+  display: none;
 }
 
 .profile-picture {
